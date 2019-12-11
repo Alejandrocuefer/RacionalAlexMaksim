@@ -51,5 +51,9 @@ public class Racional {
         }
     }
     
+    public void imprimirConsola(){
+        System.out.println(this.getA() + "/" + this.getB());
+    }
+    
 
 }
