@@ -79,4 +79,10 @@ public class Racional {
         }
         return respuesta;
     }
+    
+    public int producto(Racional x) {
+        int respuesta;
+        respuesta = (this.a * x.getA()) / (this.b * x.getB());
+        return respuesta;
+    }
 }
