@@ -50,8 +50,8 @@ public class Racional {
             this.b = b;
         }
     }
-    
-    public void imprimirConsola(){
+
+    public void imprimirConsola() {
         System.out.println("Numero racional: " + this.getA() + "/" + this.getB());
     }
 
@@ -59,6 +59,14 @@ public class Racional {
     public String toString() {
         return this.getA() + "/" + this.getB();
     }
-    
-    
+
+    public int sumar(Racional x) {
+        int respuesta;
+        if (this.b == x.getB()) {
+            respuesta = (this.a + x.getA()) / this.b;
+        } else {
+            respuesta = (this.a * x.getB() + this.b * x.getA()) / (this.b * x.getB());
+        }
+        return respuesta;
+    }
 }
