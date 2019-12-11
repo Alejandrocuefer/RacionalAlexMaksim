@@ -81,8 +81,12 @@ public class Racional {
     }
     
     public void producto(Racional x) {
-
         this.a = this.a * x.getA();
         this.b = this.b * x.getB();
+    }
+    
+    public void division(Racional x, Racional y){
+        this.a = x.getA() * y.getB();
+        this.b = x.getB() * y.getA();
     }
 }
