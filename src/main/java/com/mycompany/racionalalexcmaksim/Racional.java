@@ -87,29 +87,24 @@ public class Racional {
         this.b = this.b * x.getB();
     }
 
-    public void division(Racional x, Racional y) {
-        this.a = x.getA() * y.getB();
-        this.b = x.getB() * y.getA();
+    public static Racional division(Racional x, Racional y) {
+        int num1 = x.getA() * y.getB();
+        int num2 = x.getB() * y.getA();
+        return new Racional(num1, num2);
     }
 
     public static boolean igualdad(Racional x, Racional y) {
-        int p1;
-        int p2;
         boolean respuesta;
-        p1 = x.getA() * y.getB();
-        p2 = x.getB() * y.getA();
+        int num1 = x.getA() * y.getB();
+        int num2 = x.getB() * y.getA();
 
-        return respuesta = (p1 == p2);
+        return respuesta = (num1 == num2);
     }
 
-    public static void aleatorio() {
+    public static Racional aleatorio() {
         Random num = new Random();
-        int num1;
-        int num2;
-        num1 = num.nextInt();
-        do {
-            num2 = num.nextInt();
-        } while (num2 == 0);
-
+        int num1 = num.nextInt();
+        int num2 = num.nextInt();
+        return new Racional(num1, num2);
     }
 }
