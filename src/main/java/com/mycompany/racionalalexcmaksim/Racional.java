@@ -38,4 +38,18 @@ public class Racional {
         return b;
     }
 
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public void setB(int b) {
+        if (this.b == 0) {
+            this.b = 1;
+            System.out.println("Denominador no es valido");
+        } else {
+            this.b = b;
+        }
+    }
+    
+
 }
