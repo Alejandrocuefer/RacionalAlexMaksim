@@ -80,9 +80,9 @@ public class Racional {
 
     }
     
-    public int producto(Racional x) {
-        int respuesta;
-        respuesta = (this.a * x.getA()) / (this.b * x.getB());
-        return respuesta;
+    public void producto(Racional x) {
+
+        this.a = this.a * x.getA();
+        this.b = this.b * x.getB();
     }
 }
