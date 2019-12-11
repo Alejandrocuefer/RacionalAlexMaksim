@@ -69,4 +69,14 @@ public class Racional {
         }
         return respuesta;
     }
+    
+    public int restar(Racional x) {
+        int respuesta;
+        if (this.b == x.getB()) {
+            respuesta = (this.a - x.getA()) / this.b;
+        } else {
+            respuesta = (this.a * x.getB() - this.b * x.getA()) / (this.b * x.getB());
+        }
+        return respuesta;
+    }
 }
