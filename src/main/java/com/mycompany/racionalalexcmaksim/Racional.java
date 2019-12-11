@@ -89,4 +89,14 @@ public class Racional {
         this.a = x.getA() * y.getB();
         this.b = x.getB() * y.getA();
     }
+    
+    public static boolean igualdad(Racional x, Racional y){
+        int p1;
+        int p2;
+        boolean respuesta;
+        p1 = x.getA() * y.getB();
+        p2 = x.getB() * y.getA();
+        
+        return respuesta = (p1 == p2);
+    }
 }
