@@ -60,14 +60,14 @@ public class Racional {
         return this.getA() + "/" + this.getB();
     }
 
-    public int sumar(Racional x) {
-        int respuesta;
+    public void sumar(Racional x) {
         if (this.b == x.getB()) {
-            respuesta = (this.a + x.getA()) / this.b;
+           this.a = this.a + x.getA();
         } else {
-            respuesta = (this.a * x.getB() + this.b * x.getA()) / (this.b * x.getB());
+            this.a = (this.a * x.getB() + this.b * x.getA());
+            this.b = this.b * x.getB();
         }
-        return respuesta;
+        
     }
     
     public int restar(Racional x) {
