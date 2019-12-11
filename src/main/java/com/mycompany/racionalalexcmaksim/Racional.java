@@ -54,6 +54,11 @@ public class Racional {
     public void imprimirConsola(){
         System.out.println("Numero racional: " + this.getA() + "/" + this.getB());
     }
-    
 
+    @Override
+    public String toString() {
+        return this.getA() + "/" + this.getB();
+    }
+    
+    
 }
