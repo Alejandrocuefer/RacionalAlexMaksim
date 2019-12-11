@@ -52,7 +52,7 @@ public class Racional {
     }
     
     public void imprimirConsola(){
-        System.out.println(this.getA() + "/" + this.getB());
+        System.out.println("Numero racional: " + this.getA() + "/" + this.getB());
     }
     
 
