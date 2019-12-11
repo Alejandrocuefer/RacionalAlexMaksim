@@ -5,6 +5,8 @@
  */
 package com.mycompany.racionalalexcmaksim;
 
+import java.util.Random;
+
 /**
  *
  * @author alex
@@ -69,7 +71,7 @@ public class Racional {
         }
 
     }
-    
+
     public void restar(Racional x) {
         if (this.b == x.getB()) {
             this.a = this.a - x.getA();
@@ -79,24 +81,35 @@ public class Racional {
         }
 
     }
-    
+
     public void producto(Racional x) {
         this.a = this.a * x.getA();
         this.b = this.b * x.getB();
     }
-    
-    public void division(Racional x, Racional y){
+
+    public void division(Racional x, Racional y) {
         this.a = x.getA() * y.getB();
         this.b = x.getB() * y.getA();
     }
-    
-    public static boolean igualdad(Racional x, Racional y){
+
+    public static boolean igualdad(Racional x, Racional y) {
         int p1;
         int p2;
         boolean respuesta;
         p1 = x.getA() * y.getB();
         p2 = x.getB() * y.getA();
-        
+
         return respuesta = (p1 == p2);
+    }
+
+    public static void aleatorio() {
+        Random num = new Random();
+        int num1;
+        int num2;
+        num1 = num.nextInt();
+        do {
+            num2 = num.nextInt();
+        } while (num2 == 0);
+
     }
 }
