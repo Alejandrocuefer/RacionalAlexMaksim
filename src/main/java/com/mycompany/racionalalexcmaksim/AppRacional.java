@@ -16,5 +16,8 @@ public class AppRacional {
         
         Racional a = Racional.aleatorio();
 
+        z.imprimirConsola();
+        k.imprimirConsola();
+        a.imprimirConsola();
     }
 }
