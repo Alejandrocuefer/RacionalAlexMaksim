@@ -25,5 +25,6 @@ public class AppRacional {
         z.sumar(k);
         System.out.println(z);
         
+        System.out.println(Racional.division(z, k));
     }
 }
