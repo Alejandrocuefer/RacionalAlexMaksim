@@ -22,5 +22,8 @@ public class AppRacional {
         
         System.out.println(Racional.igualdad(z, k));
         
+        z.sumar(k);
+        System.out.println(z);
+        
     }
 }
