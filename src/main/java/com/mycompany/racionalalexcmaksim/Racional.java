@@ -23,7 +23,7 @@ public class Racional {
 
     public Racional(int a, int b) {
         this.a = a;
-        if (this.b == 0) {
+        if (this.b != 0) {
             this.b = 1;
             System.out.println("Denominador no es valido");
         } else {
