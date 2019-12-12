@@ -26,5 +26,8 @@ public class AppRacional {
         System.out.println(z);
         
         System.out.println(Racional.division(z, k));
+        
+        z.producto(k);
+        System.out.println(z);
     }
 }
