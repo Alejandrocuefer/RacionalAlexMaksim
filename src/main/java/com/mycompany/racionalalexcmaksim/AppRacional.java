@@ -19,5 +19,8 @@ public class AppRacional {
         z.imprimirConsola();
         k.imprimirConsola();
         a.imprimirConsola();
+        
+        System.out.println(Racional.igualdad(z, k));
+        
     }
 }
